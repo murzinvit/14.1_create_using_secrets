@@ -1,7 +1,7 @@
 ### Задача 1: Работа с секретами через утилиту kubectl в установленном minikube: </br>
 Выполните приведённые ниже команды в консоли, получите вывод команд. Сохраните задачу 1 как справочный материал </br>
 Как создать секрет? </br>
-openssl genrsa -out cert.key 4096</br>
+`openssl genrsa -out cert.key 4096` </br>
 `openssl req -x509 -new -key cert.key -days 3650 -out cert.crt -subj '/C=RU/ST=Perm/L=Perm/CN=k8s-master1'` </br>
 `kubectl create secret tls domain-cert --cert=certs/cert.crt --key=certs/cert.key` </br>
 Как просмотреть список секретов?: </br>
