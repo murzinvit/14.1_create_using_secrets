@@ -28,4 +28,5 @@ openssl genrsa -out cert.key 4096</br>
 `kubectl apply -f domain-cert.yml` </br>
 ![secret_from_file](https://github.com/murzinvit/screen/blob/5ce359cc14789b517c72ef74024ffe88629d0276/Kuber_upload_secret_from_file.jpg) </br>
 
-### Задача 2 (*): Работа с секретами внутри модуля
+### Задача 2 (*): Работа с секретами внутри модуля </br>
+Выберите любимый образ контейнера, подключите секреты и проверьте их доступность как в виде переменных окружения, так и в виде примонтированного тома </br>
