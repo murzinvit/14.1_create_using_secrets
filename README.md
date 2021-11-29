@@ -31,6 +31,6 @@
 Выберите любимый образ контейнера, подключите секреты и проверьте их доступность как в виде переменных окружения, так и в виде примонтированного тома </br>
 Secret в виде переменной: [mysql-secret-pod.yaml](https://github.com/murzinvit/14.1_create_using_secrets/blob/9025339498fbd8fb0f2eee9579eb2d5054ed5731/mysql-secret-pod.yaml) </br>
 ![echo_paas_mysql](https://github.com/murzinvit/screen_1/blob/f7d1c5c70094fc4a1b7c0e15c95f87f193329333/Kuber_echo_paas_mysql.jpg) </br>
-После: `bectl expose pod k8s-mysql --type=NodePort --name=mysql-service` </br>
+После: `kubectl expose pod k8s-mysql --type=NodePort --name=mysql-service` </br>
 MySql доступен по паролю из $MYSQL_ROOT_PASSWORD </br>
 ![opn_in_heidi](https://github.com/murzinvit/screen_1/blob/2a5d6c786b15f00ed29f808f3392ed3d6ba35620/Kuber_opn_in_heidi.jpg) </br>
